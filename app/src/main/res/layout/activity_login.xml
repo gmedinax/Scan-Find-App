@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BFC5D3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BFC5D3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/menu3"
+        app:title="@string/txtNull"
+        />
+        <ImageButton
+            android:id="@+id/btnRegresar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#BFC5D3"
+            android:src="@drawable/ic_back"
+            >
+        </ImageButton>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#7996B8"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/first_menu_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:backgroundTint="#7996B8"
+                android:src="@drawable/ic_scan_outlined"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/placeholder"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/first_menu_item"
+                app:layout_constraintEnd_toStartOf="@+id/first_menu_item"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/first_menu_item"
+                app:layout_constraintTop_toTopOf="@+id/first_menu_item" />
+
+            <ImageButton
+                android:id="@+id/fourth_menu_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="44dp"
+                app:backgroundTint="#7996B8"
+                android:src="@drawable/ic_store_outlined"
+                app:layout_constraintBottom_toBottomOf="@+id/first_menu_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toTopOf="@+id/first_menu_item"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnHome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#F5F5F5"
+        android:src="@drawable/ic_home_outlined"
+        app:layout_anchor="@id/bottombar" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/txtvwLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:text="Inicia Sesión"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/eTEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:layout_marginTop="170dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/eTPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="240dp"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="top|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:backgroundTint="#374457"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:layout_marginTop="360dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="¿Olvidó su contraseña?"
+        android:visibility="gone"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Regístrate"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLog"
+        style="?android:attr/progressBarStyle"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

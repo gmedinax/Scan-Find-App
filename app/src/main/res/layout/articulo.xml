@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardarticulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/main_toolbar"
+    android:layout_above="@id/bottombar"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="20dp"
+    app:strokeColor="#f5f5f5"
+    app:strokeWidth="1dp"
+
+    app:cardUseCompatPadding="true">>
+
+    <RelativeLayout
+        android:id="@+id/layoutcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Media -->
+
+        <ImageView
+            android:id="@+id/ivArticulo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal= "true"
+            android:contentDescription="@string/content_description_media"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below= "@+id/ivArticulo"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp">
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/txtarticulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:layout_marginStart="8dp"
+                android:maxLines="3"
+                android:textColor="?android:attr/textColorPrimary"
+
+                android:textSize="14sp"
+                tools:text="This"
+                android:layout_marginLeft="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below= "@+id/txtarticulo"
+                >
+                <TextView
+                    android:id="@+id/txtdescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Descripción del artículo"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

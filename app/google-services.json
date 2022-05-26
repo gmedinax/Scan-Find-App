@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "599029164754",
+    "firebase_url": "https://scanfindapp-default-rtdb.firebaseio.com",
+    "project_id": "scanfindapp",
+    "storage_bucket": "scanfindapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599029164754:android:1f1c8043d3bad31ee55b0b",
+        "android_client_info": {
+          "package_name": "com.example.scanfindapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599029164754-d4ftcib2sg31fgnqijr2lsfbe3tc3qjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scanfindapp",
+            "certificate_hash": "a56d7784dc3ffe8fbe2730144a733c122420ef4c"
+          }
+        },
+        {
+          "client_id": "599029164754-788vj7epovcfpa7rl49nqpsksp036o8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwr7eb6nbGJ3t2Hahxe2yQOFodjuSXu2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599029164754-788vj7epovcfpa7rl49nqpsksp036o8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScanFindApp</string>
+    <string name="app_inicio">Inicio</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="content_description_btnlogin">Inicie sesión</string>
+    <string name="btn_home">Inicio</string>
+    <string name="btn_scan">Scan</string>
+    <string name="btn_store">Artículos</string>
+    <string name="txtNull"></string>
+    <string name="content_description_media">Imagen de referencia</string>
+    <string name="permission_request">Esta app necesita acceso a los archivos de su dispositivo</string>
+</resources>
